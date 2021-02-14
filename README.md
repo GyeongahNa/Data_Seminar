@@ -4,6 +4,7 @@
 
 - 경희대학교 경영대학 데이터 세미나 10기
 - 지도교수님: 박재홍 교수님
+- 2021/1/22 (금) ~ 
 
 <!-- Java Programming -->
 ### Java programming
@@ -15,4 +16,7 @@
 
 ### Linear Algebra
 > Youtube - [이상엽Math_선형대수학](https://youtu.be/525w2Zqh13M)
+
+### Data Crawling
+
 
