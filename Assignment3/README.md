@@ -1,11 +1,11 @@
 <!-- Heading -->
 ## Assignment3
   > [subject.pdf](https://see.stanford.edu/materials/icspmcs106a/19-assignment-3-breakout.pdf)<br>
+  > Java의 그래픽 라이브러리를 활용하여 BREAK OUT 게임 구현하기<br>
   > You can download the starter codes [here](https://see.stanford.edu/Course/CS106A)<br>
-  > Assignment3 is creating a break out game.<br><br>
 
 ### Demo video
-  <img src = "https://user-images.githubusercontent.com/60082435/107874079-5ca30900-6efa-11eb-9d00-5d3653c7ad22.mov" width = "300">
+<img src = "https://user-images.githubusercontent.com/60082435/109004941-bff81c80-76ec-11eb-90cb-909dfecb5587.gif" width = 350>
 
 ### Details
   - Every time the ball hits the paddle seven times, the ball speeds up.
