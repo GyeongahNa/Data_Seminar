@@ -2,6 +2,7 @@
 ## Assignment1
 
 > [subject.pdf](https://see.stanford.edu/materials/icspmcs106a/07-assignment-1-karel.pdf)<br>
+> 주어진 라이브러리 내 함수를 활용하여 Karel 미션 수행하기
 
 **CollectNewspaperKarel.java**
 
