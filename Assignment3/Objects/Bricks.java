@@ -1,14 +1,16 @@
+package Objects;
+
 import acm.graphics.*;
 import java.awt.*;
 import java.util.ArrayList;
 
 public class Bricks extends GCompound{
 
-	ArrayList<ArrayList<GRect>>	bricks;
-	public int					brickWidth, brickHeight, brickSep;
-	public int					nbricksPerRow, nbrickRows;
-	public int					brickXOffset, brickYOffset;	
-	public int					numBricks;
+	ArrayList<ArrayList<GRect>> bricks;
+	public int brickWidth, brickHeight, brickSep;
+	public int nbricksPerRow, nbrickRows;
+	public int brickXOffset, brickYOffset;	
+	public int numBricks;
 	
 	/*
 	 * Constructor : Bricks

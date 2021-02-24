@@ -1,15 +1,16 @@
+package Objects;
 import acm.graphics.*;
 import java.awt.*;
 import java.util.ArrayList;
 
 public class HUD extends GCompound{
 	
-	GRect				hud;
-	GLabel				levelBox, scoreBox;
-	ArrayList<GImage>	lifeBox;
-	private int			x, y;
-	private int			hudWidth, hudHeight;
-	private int			blockWidth, blockHeight, blockSep, blockOffset;
+	GRect hud;
+	GLabel levelBox, scoreBox;
+	ArrayList<GImage> lifeBox;
+	private int x, y;
+	private int hudWidth, hudHeight;
+	private int blockWidth, blockHeight, blockSep, blockOffset;
 	
 	/*
 	 * Constructor : HUD
@@ -114,7 +115,7 @@ public class HUD extends GCompound{
 		blockY = y + blockOffset;
 		lifeBox = new ArrayList<GImage>();
 		for (int i = 0; i < numLife; i++) {
-			star = new GImage("star.png");
+			star = new GImage("./image/star.png");
 			star.setSize(blockWidth / (double)nTurns, blockHeight);
 			star.setLocation(blockX + blockWidth / (double)nTurns * i, blockY);
 			lifeBox.add(star);

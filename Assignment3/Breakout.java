@@ -5,6 +5,8 @@
  */
 
 import acm.graphics.*;
+import Objects.*;
+
 import acm.program.*;
 import acm.util.*;
 import java.awt.*;
@@ -55,31 +57,28 @@ public class Breakout extends GraphicsProgram {
 	private RandomGenerator rgen = new RandomGenerator();
 	
 /** Velocity of the ball */
-	private final double VX = rgen.nextDouble(1.0, 3.0);
+	private double VX = rgen.nextDouble(1.0, 3.0);
 	private static final double VY = 3;
 	
 /** Height of a HUD */
 	private static final int HUD_HEIGHT = 40;
 
-/** Sound Clip */
-	//SoundClip sound = new SoundClip();
-	
 /** Exit status flag */
 	private static final int NOT_TERMINATED = 0;
 	private static final int LOSE = 1;
 	private static final int WIN = 2;
 	
 /** Main objects of the game */
-	private GImage	startPage;
-	private Bricks	bricks;
-	private Paddle	paddle;
-	private	Ball	ball;
-	private	HUD		hud;
-	private Message	msg;
-	private int		numLife;
-	private int		pauseTime;
-	private int		score;
-	private int		level;
+	private GImage startPage;
+	private Bricks bricks;
+	private Paddle paddle;
+	private	Ball ball;
+	private	HUD hud;
+	private Message msg;
+	private int numLife;
+	private int pauseTime;
+	private int score;
+	private int level;
 	
 	/*
 	 * Method Name : run
@@ -103,7 +102,7 @@ public class Breakout extends GraphicsProgram {
 	 * Method Name : displayStartPage
 	 * Description : At the beginning of the game, displays the start image and the text "Loading...".*/
 	private void displayStartPage() {
-		startPage = new GImage("startPage.png");
+		startPage = new GImage("./image/startPage.png");
 		getGCanvas().setBackground(Color.BLACK);
 		startPage.setSize(WIDTH, getHeight());
 		add(startPage);
@@ -130,6 +129,7 @@ public class Breakout extends GraphicsProgram {
 		hud = new HUD(0, getHeight() - HUD_HEIGHT, WIDTH, HUD_HEIGHT, level, NTURNS, score);
 		numLife = NTURNS;
 		pauseTime = 30 - level * 2; 
+		VX = rgen.nextDouble(1.0, 3.0);
 		paddle.setHitCnt(0);
 		add(bricks);
 		add(paddle);

@@ -1,13 +1,14 @@
+package Objects;
 import acm.graphics.*;
 import java.awt.*;
 
 public class Paddle extends GCompound{
 	
-	GRect			paddle;
-	private double	x, y;
-	private double	paddleWidth, paddleHeight;
-	private double	leftRange, rightRange;
-	private int		hitCnt;
+	GRect paddle;
+	private double x, y;
+	private double paddleWidth, paddleHeight;
+	private double leftRange, rightRange;
+	private int hitCnt;
 	
 	/*
 	 * Constructor : Paddle
