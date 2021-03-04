@@ -17,6 +17,8 @@
 ### Linear Algebra
 > Youtube - [이상엽Math_선형대수학](https://youtu.be/525w2Zqh13M)
 
-### Data Crawling
+### ACCESS practice
+
+- [X] [DB_ACCESS](https://github.com/GyeongahNa/Data_Seminar/tree/main/DB_ACCESS) : 테이블과 쿼리를 이용하여 원하는 데이터 추출 연습, 크로스탭 
 
 
